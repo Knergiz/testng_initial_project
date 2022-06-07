@@ -1,7 +1,8 @@
 <suite name="Regression">
     <test name="All Functionalities">
         <classes>
-
+            <class name="scripts.CarsTests">
+            </class>
         </classes>
     </test>
 </suite>
