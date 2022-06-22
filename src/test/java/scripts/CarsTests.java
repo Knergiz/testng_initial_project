@@ -3,6 +3,7 @@ package scripts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.Waiter;
 
 public class CarsTests extends Base{
 
@@ -12,6 +13,7 @@ public class CarsTests extends Base{
         homePage.signInLink.click();
 
         //headers
+        Waiter.pause(5);
         Assert.assertEquals(signInPage.heading1.getText(), "Sign in");
         Assert.assertEquals(signInPage.paragraph.getText(), "New to Cars.com? Sign up. Are you a dealer");
 
